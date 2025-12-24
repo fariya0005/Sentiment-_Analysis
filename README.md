@@ -14,9 +14,14 @@ A Python-based, multi-platform system for scraping Facebook, Instagram, and Twit
 •	Python: 3.9+
 Required Libraries
 pip install pandas apify-client python-dotenv streamlit
+
+
 Environment Setup
 Create a .env file in the project root:
 APIFY_API_TOKEN=your_apify_token_here
+
+
+
 📁 Project Structure
 project_root/
 │
@@ -66,6 +71,8 @@ Instagram	louisdeconinck/instagram-comments-scraper	Comment scraping
 Twitter	web.harvester/twitter-scraper	Tweets & profiles
 Twitter	kaitoeasyapi/twitter-reply	Tweet replies
 Twitter	kaitoeasyapi/tweet-reweet-userlist	Retweeters
+
+
 🔄 Data Flow
 1.	User provides input (URL, username, hashtag, keyword, IDs)
 2.	Corresponding Apify actor is triggered
@@ -73,6 +80,8 @@ Twitter	kaitoeasyapi/tweet-reweet-userlist	Retweeters
 4.	Data is cleaned and normalized
 5.	Engagement and sentiment metrics are computed
 6.	Raw and processed files are saved
+
+
 ▶️ How to Run
 Run via Terminal
 python scraper.py
@@ -85,5 +94,4 @@ streamlit run app.py
 •	Invalid URLs or IDs are skipped with warnings
 •	Actor failures retry automatically
 •	Sentiment analysis errors do not stop execution
-📄 License
-This project is intended for educational and research purposes.
+
