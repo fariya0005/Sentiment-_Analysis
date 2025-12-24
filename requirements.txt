@@ -1,0 +1,8 @@
+# Required
+apify-client>=1.7.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+
+# Optional - Uncomment what you need for sentiment analysis later:
+# textblob>=0.17.1
+# vaderSentiment>=3.3.2
